@@ -3,17 +3,21 @@
 <head>
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Dog App</title>
+  <title>Doggie Browser App</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="css/reset.css">
+  <!-- Google Font -->
   <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Lato:300,400,700" rel="stylesheet">
+  <!-- Chosen.js -->
   <link rel="stylesheet" href="css/chosen.min.css">
+  <!-- Gum Gum Blue Theme -->
   <link rel="stylesheet" href="css/theme-blue.css">
   <link rel="stylesheet" href="css/style.css">
+  <!-- Font Awesome -->
   <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
 </head>
 <body>
-  <a href="#" id="back-to-top"><i class="fas fa-arrow-up fa-2x"></i></a>
+  <a href='#' id='back-to-top'><i class='fas fa-arrow-up fa-2x'></i></a>
 
   <section id='header'>
       <div class='container' id='nav'>
@@ -39,16 +43,16 @@
       </div>
       <div id='display-results'>
         <div class='image-card'>
-          <img src='media/dogs.png' class='gds-image' style='object-fit: cover'>
+          <img src='media/dogs-sketch.png' class='gds-image' style='object-fit: cover'>
         </div>
         <div class='image-card'>
-          <img src='media/dogs.png' class='gds-image' style='object-fit: cover'>
+          <img src='media/dogs-sketch.png' class='gds-image' style='object-fit: cover'>
         </div>
         <div class='image-card'>
-          <img src='media/dogs.png' class='gds-image' style='object-fit: cover'>
+          <img src='media/dogs-sketch.png' class='gds-image' style='object-fit: cover'>
         </div>
-      </div>
-    </div>
+      </div> <!--End 'display-result' -->
+    </div> <!--End 'display-container' -->
   </section>
 
   <footer>
@@ -57,10 +61,13 @@
     </div>
   </footer>
 
+  <!-- jQuery -->
   <script src="js/jquery-3.3.1.min.js"></script>
+  <!-- Chosen.js -->
   <script src="js/chosen.jquery.min.js"></script>
-  <script type='module' src='js/util.js'></script>
-  <script type='module' src='js/dogs.js'></script>
-  <script type='module' src='app.js'></script>
+  <!-- JS files -->
+  <script type='module' src="js/util.js"></script>
+  <script type='module' src="js/dogs.js"></script>
+  <script type='module' src="app.js"></script>
 </body>
 </html>
