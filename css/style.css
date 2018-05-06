@@ -81,12 +81,6 @@ Header
   }
 }
 
-/* @media only screen and (max-width: 604px) {
-  .headline  {
-    font-size: 50px;
-  }
-} */
-
 @media only screen and (max-width: 493px) {
   .headline  {
     font-size: 50px;
@@ -99,14 +93,14 @@ Search
 **********************/
 
 #search {
-  background-image: url('/media/graydogpaper.jpg');
+  background-image: url('../media/graydogpaper.jpg');
 }
 
 #search-container {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 200px;  
+  height: 225px;  
 }
 
 .chosen-container-single .chosen-search input[type=text] {
@@ -139,7 +133,6 @@ Display
 }
 
 #display-results {
-  /* min-height: 400px; */
   height: 100%;
   display: flex;
   flex-wrap: wrap;
