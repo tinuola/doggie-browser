@@ -1,4 +1,3 @@
-console.log('util.js is loaded');
 
 let select = document.getElementById('select-breed');
 let display = document.getElementById('display-results');

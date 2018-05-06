@@ -1,11 +1,11 @@
-console.log('app.js is loaded');
+
 import { breedResults } from './js/dogs.js';
 
 $(document).ready(() => {
   $('.chosen-select').chosen();
 
   $(window).scroll(function() {
-    if ($(this).scrollTop() >= 200) { 
+    if ($(this).scrollTop() >= 300) { 
       $('#back-to-top').fadeIn(200);
     } else {
       $('#back-to-top').fadeOut(200);
@@ -28,6 +28,3 @@ $(document).ready(() => {
   $('#select-breed').on('change', displayBreedName);
 
 });
-
-  
-
