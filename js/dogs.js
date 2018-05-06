@@ -1,20 +1,20 @@
 
-import { displayBreedList, createImageCard } from './util.js';
+import { displayBreedList, createImageCard, errorHandler } from './util.js';
 
 const url = 'https://dog.ceo/api/breeds/list/all';
-let select = document.getElementById('select-breed');
 
-//update using async/await
-const dogAPI = fetch(url)
-	.then(response => response.json())
-	.then(jsonResponse => {
-		let data = Object.keys(jsonResponse.message);
-
-		return displayBreedList(data);
-	})
-	.catch(function(error) {
-		console.log('Oops', error);
-	})
+const dogAPI = async () => {
+	try {
+		let response = await fetch(url);
+		let data = await response.json();
+		return displayBreedList(Object.keys(data.message));
+	}
+	catch(error){
+		errorHandler();
+		console.log('Error', error);
+	}
+}
+dogAPI();
 
 export const breedResults = async (breed) => {
 	try {
@@ -23,6 +23,7 @@ export const breedResults = async (breed) => {
 		return createImageCard(data.message);
 	}
 	catch(error){
+		errorHandler();
 		console.log('Error', error);
 	}
 }
