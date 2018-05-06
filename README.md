@@ -14,7 +14,7 @@ A sample web app for browsing dog breeds, using the [Dog.CEO API](https://dog.ce
 * jQuery _(a dependency for Chosen)_
 * [Chosen.js](https://harvesthq.github.io/chosen/) _(for search/selection functionality)_
 * Live-Server _(for local development)_
-* [GumGum Design System](http://ds.gumgum.com/stable/) (Blue Theme)
+* [GumGum Design System](http://ds.gumgum.com/stable/) _(Menu styling, Image grid)_
 
 ### Features
 * Dropdown menu 
@@ -28,7 +28,8 @@ A sample web app for browsing dog breeds, using the [Dog.CEO API](https://dog.ce
 ### Pending / Wishlist / Icebox
 * Filter results by sub-breed
 * Load images on scroll
-  * Issue: Search results are often huge. Would like to implement a more efficient results handling system: Display n number of images on initial load, then on scroll load more images
+  * Issue: Search results are often huge. Would like to implement a more efficient results handling system: 
+    * _Display n number of images on initial load, then on scroll load more images_
 * Display more images in a row
 * Click to copy image url
   * Image 'basket'
