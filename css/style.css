@@ -1,0 +1,204 @@
+/*********************
+Global Style
+**********************/
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+}
+
+.container {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 25px 20px;
+}
+
+p,
+ul li,
+ol li {
+  font-size: 16px;
+  line-height: 21px;
+}
+
+#back-to-top {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 99;
+  font-size: 16px;
+  border: none;
+  outline: none;
+  background-color: rgb(0, 167, 207);
+  color: #fff;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
+
+#back-to-top:hover {
+  background-color: rgb(4, 108, 134);
+}
+
+/*********************
+Header
+**********************/
+#header {
+  background-color: #38424c;
+}
+
+#nav {
+  height: 100px;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.headline {
+  font-family: 'Indie Flower', cursive;
+  font-size: 60px;
+  letter-spacing: 3px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.paws {
+  margin: 0 15px;
+}
+
+@media only screen and (max-width: 696px) {
+  .headline  {
+    font-size: 55px;
+    line-height: 45px;
+  }
+  .paws {
+    margin: 0 5px;
+  }
+}
+
+/* @media only screen and (max-width: 604px) {
+  .headline  {
+    font-size: 50px;
+  }
+} */
+
+@media only screen and (max-width: 493px) {
+  .headline  {
+    font-size: 50px;
+    line-height: 40px;
+  }
+}
+
+/*********************
+Search
+**********************/
+
+#search {
+  background-image: url('/media/graydogpaper.jpg');
+}
+
+#search-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;  
+}
+
+.chosen-container-single .chosen-search input[type=text] {
+  padding: 8px 20px 8px 5px;
+}
+
+
+/*********************
+Display
+**********************/
+
+#display-breed-name {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 50px;
+  padding: 40px 33px;
+  margin-bottom: 22px;
+}
+
+#breed-name {
+  font-size: 35px;
+  font-weight: 700;
+}
+
+#results {
+  font-size: 20px;
+  font-weight: 400;
+  color: rgb(0, 167, 207);
+}
+
+#display-results {
+  /* min-height: 400px; */
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  padding: 25px;
+  background-color: #fff;
+}
+
+.image-card {
+  display: flex;
+  flex: 1 0 30%;
+  height: 300px;
+  background-color: #fff;
+  border: 1px solid #c9c9c9;
+  border-radius: 2px;
+  overflow: hidden;
+  margin: 5px;
+  padding: 17px 0;
+}
+
+.image-card img {
+  margin: 0 auto;
+  width: 90%;
+}
+
+@media only screen and (max-width: 768px) {
+  .image-card {
+    flex: 0 0 48%;
+  }
+}
+
+@media only screen and (max-width: 604px) {
+  .image-card {
+    flex: 1 0 50%;
+  }
+  #display-breed-name {
+    flex-direction: column;
+    justify-content: center;
+  }
+  #results {
+    margin-top: 20px;
+  }
+}
+
+/*********************
+Footer
+**********************/
+
+footer {
+  background-color: #38424c;
+}
+
+#footer-container {
+  color: #fff;
+  margin-top: 45px;
+}
+
+#footer-container p {
+  font-size: 12px;
+  font-weight: 100;
+}
