@@ -17,6 +17,20 @@ const capitalize = (text) => {
   return text.replace(text[0], capChar);
 }
 
+const createImageCardAttributes = (elem) => {
+  let observer = lozad();
+  observer.observe();
+  let div = createNode('div');
+  div.setAttribute('class', 'image-card');
+  let img = createNode('img');
+  img.src = elem;
+  img.setAttribute('class', 'gds-image lozad');
+  img.setAttribute('style', 'object-fit: cover');
+  append(div, img);
+  append(display, div);
+  observer.observe();
+};
+
 export const displayBreedList = (arr) => {
   return arr.map(name => {
     let option = createNode('option');
@@ -29,16 +43,8 @@ export const displayBreedList = (arr) => {
 export const createImageCard = (arr) => {
   display.innerHTML = '';
   arr.length > 300 ? resultNum.textContent = '300+' : resultNum.textContent = arr.length;
-  
   return arr.map(image => {
-    let div = createNode('div');
-    div.setAttribute('class', 'image-card');
-    let img = createNode('img');
-    img.src = image;
-    img.setAttribute('class', 'gds-image');
-    img.setAttribute('style', 'object-fit: cover');
-    append(div, img);
-    append(display, div);
+    createImageCardAttributes(image);
   });
 };
 
