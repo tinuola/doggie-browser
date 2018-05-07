@@ -1,5 +1,5 @@
 # Doggie Browser
-A sample web app for browsing dog breeds, using the [Dog.CEO API](https://dog.ceo/).
+A sample web app for browsing dog breeds, using the [Dog.CEO](https://dog.ceo/) API.
 
 ## Live Demo
 * [Doggie Browser](https://tinuola.github.io/doggie-browser/)
