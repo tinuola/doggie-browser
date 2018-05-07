@@ -27,8 +27,8 @@ export const displayBreedList = (arr) => {
 };
 
 const createImageCardAttributes = (elem) => {
-  let observer = lozad();
-  observer.observe();
+  let observer = lozad(); //Lazy loading
+  observer.observe();//Lazy loading
   let div = createNode('div');
   div.setAttribute('class', 'image-card');
   let img = createNode('img');

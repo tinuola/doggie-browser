@@ -2,7 +2,7 @@ import { displayBreedList, createImageCard, errorHandler } from './util.js';
 
 const url = 'https://dog.ceo/api/breeds/list/all';
 
-export const dogAPI = async () => {
+const dogAPI = async () => {
 	try {
 		let response = await fetch(url);
 		let data = await response.json();

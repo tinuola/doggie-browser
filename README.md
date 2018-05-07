@@ -1,5 +1,5 @@
 # Doggie Browser
-A sample web app for browsing dog breeds, using the [Dog.CEO](https://dog.ceo/) API.
+A sample web app for browsing dog breeds, using [Dog.CEO's](https://dog.ceo/) Dog API.
 
 ## Live Demo
 * [Doggie Browser](https://tinuola.github.io/doggie-browser/)
@@ -9,7 +9,7 @@ A sample web app for browsing dog breeds, using the [Dog.CEO](https://dog.ceo/) 
 * Terminal ==> npm install _(in project directory)_
 * Terminal ==> live-server _(in project directory)_
 
-### Tools Used
+### Tooling
 * JavaScript
 * jQuery _(dependency for Chosen plugin)_
 * [Chosen.js](https://harvesthq.github.io/chosen/) _(for search/selection functionality)_
@@ -27,11 +27,14 @@ A sample web app for browsing dog breeds, using the [Dog.CEO](https://dog.ceo/) 
 * Mobile and tablet responsive 
 
 ### Issues
+* Chosen plugin initialization interferes with automatic loading of breed names into select form
+  * Temporarily disabling Chosen corrects this issue, but strips away the dropdown menu styling (yuck...)
+  * For current demo purposes, if the dropdown menu is empty refreshing the page should fill up the form with breed names
 * Search results for some breeds are large (>300)
-* With results greater than 300, preloader plugins seem to cause page jumpiness
+  * With results greater than 300, preloader plugins seem to cause page jumpiness
   * Tried: _jQuery Lazy_, _Lazy Load_, _Lozad_
-* Current workaround: Only display the first 300 images 
-* Adding to Icebox: Implement a more efficient results handling system: <br> 
+  * Current workaround: Only display the first 300 images 
+  * Adding to Icebox: Implement a more efficient results handling system: <br> 
     _Display n number of images on initial load, then on-scroll/on-click load more images_
 
 ### Icebox
@@ -39,5 +42,5 @@ A sample web app for browsing dog breeds, using the [Dog.CEO](https://dog.ceo/) 
 * Load 'more images' on scroll
 * Display more images in a row
 * Click to copy image url
-  * Image 'basket'
+  * Image 'cart'?
 * Port project to React
