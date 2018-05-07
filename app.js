@@ -1,7 +1,9 @@
 
-import { breedResults } from './js/dogs.js';
+import { dogAPI, breedResults } from './js/dogs.js';
 
 $(document).ready(() => {
+
+  dogAPI();
 
   //Initialize chosen.js for 'Select' action
   $('.chosen-select').chosen();

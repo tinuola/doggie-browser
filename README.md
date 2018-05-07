@@ -29,7 +29,7 @@ A sample web app for browsing dog breeds, using the [Dog.CEO](https://dog.ceo/) 
 ### Issues
 * Search results for some breeds are large (>300)
 * With results greater than 300, preloader plugins seem to cause page jumpiness
-  * Tried _jQuery Lazy_, _Lazy Load_
+  * Tried: _jQuery Lazy_, _Lazy Load_, _Lozad_
 * Current workaround: Only display the first 300 images 
 * Adding to Icebox: Implement a more efficient results handling system: <br> 
     _Display n number of images on initial load, then on-scroll/on-click load more images_
