@@ -1,9 +1,9 @@
 
-import { dogAPI, breedResults } from './js/dogs.js';
+import { breedResults } from './js/dogs.js';
 
 $(document).ready(() => {
 
-  // $('.chosen-select').chosen();
+  $('.chosen-select').chosen();
 
   //Scroll to top of page
   $(window).scroll(function() {
