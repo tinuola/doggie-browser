@@ -20,6 +20,10 @@ export const breedResults = async (breed) => {
 	try {
 		let response = await fetch(`https://dog.ceo/api/breed/${breed}/images`);
 		let data = await response.json();
+		if(data.message.length > 302){
+			let reducedResults = data.message.slice(0, 301);
+			return createImageCard(reducedResults);
+		}
 		return createImageCard(data.message);
 	}
 	catch(error){
