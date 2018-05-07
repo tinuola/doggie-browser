@@ -3,10 +3,7 @@ import { dogAPI, breedResults } from './js/dogs.js';
 
 $(document).ready(() => {
 
-  dogAPI();
-
-  //Initialize chosen.js for 'Select' action
-  $('.chosen-select').chosen();
+  // $('.chosen-select').chosen();
 
   //Scroll to top of page
   $(window).scroll(function() {
