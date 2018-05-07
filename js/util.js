@@ -17,6 +17,15 @@ const capitalize = (text) => {
   return text.replace(text[0], capChar);
 }
 
+export const displayBreedList = (arr) => {
+  return arr.map(name => {
+    let option = createNode('option');
+    let text = document.createTextNode(capitalize(name));
+    option.appendChild(text);
+    append(select, option);
+  })
+};
+
 const createImageCardAttributes = (elem) => {
   let observer = lozad();
   observer.observe();
@@ -29,15 +38,6 @@ const createImageCardAttributes = (elem) => {
   append(div, img);
   append(display, div);
   observer.observe();
-};
-
-export const displayBreedList = (arr) => {
-  return arr.map(name => {
-    let option = createNode('option');
-    let text = document.createTextNode(capitalize(name));
-    option.appendChild(text);
-    append(select, option);
-  })
 };
 
 export const createImageCard = (arr) => {

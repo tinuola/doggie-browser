@@ -1,4 +1,3 @@
-
 import { displayBreedList, createImageCard, errorHandler } from './util.js';
 
 const url = 'https://dog.ceo/api/breeds/list/all';
