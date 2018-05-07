@@ -1,5 +1,5 @@
 # Doggie Browser
-A sample web app for browsing dog breeds, using the [Dog.CEO API](https://dog.ceo/).
+A sample web app for browsing dog breeds, using the [Dog.CEO](https://dog.ceo/) API.
 
 ## Live Demo
 * [Doggie Browser](https://tinuola.github.io/doggie-browser/)
@@ -11,10 +11,11 @@ A sample web app for browsing dog breeds, using the [Dog.CEO API](https://dog.ce
 
 ### Tools Used
 * JavaScript
-* jQuery _(a dependency for Chosen)_
+* jQuery _(dependency for Chosen plugin)_
 * [Chosen.js](https://harvesthq.github.io/chosen/) _(for search/selection functionality)_
+* [Lozad.js](https://github.com/ApoorvSaxena/lozad.js) _(for lazy loading)_
 * Live-Server _(for local development)_
-* [GumGum Design System](http://ds.gumgum.com/stable/) (Blue Theme)
+* [GumGum Design System](http://ds.gumgum.com/stable/) _(for light styling: menu, image grid)_
 
 ### Features
 * Dropdown menu 
@@ -25,10 +26,17 @@ A sample web app for browsing dog breeds, using the [Dog.CEO API](https://dog.ce
 * Scroll to top function
 * Mobile and tablet responsive 
 
-### Pending / Wishlist / Icebox
+### Issues
+* Search results for some breeds are large (>300)
+* With results greater than 300, preloader plugins seem to cause page jumpiness
+  * Tried _jQuery Lazy_, _Lazy Load_
+* Current workaround: Only display the first 300 images 
+* Adding to Icebox: Implement a more efficient results handling system: <br> 
+    _Display n number of images on initial load, then on-scroll/on-click load more images_
+
+### Icebox
 * Filter results by sub-breed
-* Load images on scroll
-  * Issue: Search results are often huge. Would like to implement a more efficient results handling system: Display n number of images on initial load, then on scroll load more images
+* Load 'more images' on scroll
 * Display more images in a row
 * Click to copy image url
   * Image 'basket'
