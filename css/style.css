@@ -30,7 +30,7 @@ ol li {
   bottom: 20px;
   right: 20px;
   z-index: 99;
-  font-size: 16px;
+  font-size: 12px;
   border: none;
   background-color: rgb(0, 167, 207);
   color: #fff;
@@ -66,7 +66,7 @@ Header
   text-transform: uppercase;
 }
 
-.paws {
+.paws-icon {
   margin: 0 15px;
 }
 
@@ -75,7 +75,7 @@ Header
     font-size: 55px;
     line-height: 45px;
   }
-  .paws {
+  .paws-icon {
     margin: 0 5px;
   }
 }
@@ -102,8 +102,48 @@ Search
   height: 225px;  
 }
 
-.chosen-container-single .chosen-search input[type=text] {
-  padding: 8px 20px 8px 5px;
+/* Select2 styling - Removing focus outline */
+span.select2-selection.select2-selection--single,
+input.select2-search__field {
+  outline: none;
+}
+
+/* Select2 styling - Menu height */
+.select2-container--default .select2-selection--single {
+  height: 50px;
+}
+
+/* Select2 styling - Adjusting placeholder text position */
+.select2-container .select2-selection--single .select2-selection__rendered {
+  padding-top: 10px;
+}
+
+/* Select2 styling - Adjusting menu arrow position */
+.select2-container--default .select2-selection--single .select2-selection__arrow {
+  top: 10px;
+}
+
+/* Select2 styling - Adjust dropdown container height */
+.select2-container--default .select2-results > .select2-results__options {
+  max-height: 250px;
+  min-height: 200px;
+  overflow-y: auto;
+}
+
+/* Select2 styling - Dropdown border */
+span.select2-dropdown.select2-dropdown--below {
+  border-color: rgb(0, 167, 207);
+}
+
+/* Select2 styling - Results option highlighting */
+.select2-container--default .select2-results__option--highlighted[aria-selected] {
+  background-color: rgb(0, 167, 207);
+}
+
+/* Select2 styling - Input field */
+.select2-search--dropdown .select2-search__field {
+  padding: 8px;
+  font-size: 16px;
 }
 
 /*********************
