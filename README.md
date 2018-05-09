@@ -13,7 +13,8 @@ A sample web app for browsing dog breeds, using [Dog.CEO's](https://dog.ceo/) Do
 * JavaScript
 * jQuery _(dependency for Select2 plugin)_
 * [Select2](https://select2.org/) ~~[Chosen.js](https://harvesthq.github.io/chosen/)~~ _(for search/selection functionality)_
-* [Lozad.js](https://github.com/ApoorvSaxena/lozad.js) _(for lazy loading)_
+* ~~[Lozad.js](https://github.com/ApoorvSaxena/lozad.js) _(for lazy loading)_~~
+* [ScrollReveal](https://scrollrevealjs.org/)
 * Live-Server _(for local development)_
 * [GumGum Design System](http://ds.gumgum.com/stable/) _(for light styling: menu, image grid)_
 
@@ -39,7 +40,7 @@ A sample web app for browsing dog breeds, using [Dog.CEO's](https://dog.ceo/) Do
 
 ### Icebox
 * Filter results by sub-breed
-* Load 'more images' on scroll
+* ~~Load 'more images' on scroll~~
 * Display more images in a row
 * Click to copy image url
   * Image 'cart'?

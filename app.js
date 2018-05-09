@@ -1,8 +1,8 @@
-
-import { breedResults } from './js/dogs.js';
+import {breedResults} from './js/dogs.js';
 
 $(document).ready(() => {
 
+  //Select2 instantiation
   $('#select-breed').select2({
     width: '350px',
     placeholder: 'Select a Dog Breed...'
