@@ -1,4 +1,4 @@
-import {breedResults} from '/js/dogs.js';
+import {breedResults} from './js/dogs.js';
 
 $(document).ready(() => {
 
