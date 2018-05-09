@@ -6,6 +6,8 @@ const dogAPI = async () => {
 	try {
 		let response = await fetch(url);
 		let data = await response.json();
+		//To be removed...
+		console.log(Object.keys(data.message));
 		return displayBreedList(Object.keys(data.message));
 	}
 	catch(error){
