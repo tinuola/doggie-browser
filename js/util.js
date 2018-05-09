@@ -1,8 +1,9 @@
-
 let select = document.getElementById('select-breed');
 let display = document.getElementById('display-results');
 let resultNum = document.getElementById('result-num');
 let errMsg = document.getElementById('breed-name'); 
+
+window.sr = ScrollReveal({ duration: 1000 });
 
 const createNode = (element) => {
   return document.createElement(element);
@@ -27,17 +28,15 @@ export const displayBreedList = (arr) => {
 };
 
 const createImageCardAttributes = (elem) => {
-  let observer = lozad(); //Lazy loading
-  observer.observe(); //Lazy loading
   let div = createNode('div');
   div.setAttribute('class', 'image-card');
   let img = createNode('img');
-  img.setAttribute('class', 'gds-image lozad');
-  img.setAttribute('data-src', elem);
+  img.src = elem;
+  img.setAttribute('class', 'gds-image scroll');
   img.setAttribute('style', 'object-fit: cover');
   append(div, img);
   append(display, div);
-  observer.observe();
+  sr.reveal('.scroll');
 };
 
 export const createImageCard = (arr) => {
