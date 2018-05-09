@@ -3,7 +3,10 @@ import { breedResults } from './js/dogs.js';
 
 $(document).ready(() => {
 
-  $('.chosen-select').chosen();
+  $('#select-breed').select2({
+    width: '350px',
+    placeholder: 'Select a Dog Breed...',
+  });
 
   //Scroll to top of page
   $(window).scroll(function() {
