@@ -5,7 +5,7 @@ $(document).ready(() => {
 
   $('#select-breed').select2({
     width: '350px',
-    placeholder: 'Select a Dog Breed...',
+    placeholder: 'Select a Dog Breed...'
   });
 
   //Scroll to top of page

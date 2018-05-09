@@ -11,8 +11,8 @@ A sample web app for browsing dog breeds, using [Dog.CEO's](https://dog.ceo/) Do
 
 ### Tooling
 * JavaScript
-* jQuery _(dependency for Chosen plugin)_
-* [Chosen.js](https://harvesthq.github.io/chosen/) _(for search/selection functionality)_
+* jQuery _(dependency for Select2 plugin)_
+* [Select2](https://select2.org/) ~~[Chosen.js](https://harvesthq.github.io/chosen/)~~ _(for search/selection functionality)_
 * [Lozad.js](https://github.com/ApoorvSaxena/lozad.js) _(for lazy loading)_
 * Live-Server _(for local development)_
 * [GumGum Design System](http://ds.gumgum.com/stable/) _(for light styling: menu, image grid)_
@@ -27,9 +27,9 @@ A sample web app for browsing dog breeds, using [Dog.CEO's](https://dog.ceo/) Do
 * Mobile and tablet responsive 
 
 ### Issues
-* Chosen plugin initialization interferes with automatic loading of breed names into select form
-  * Temporarily disabling Chosen corrects this issue, but strips away the dropdown menu styling (yuck...)
-  * For current demo purposes, if the dropdown menu is empty refreshing the page should fill up the form with breed names
+* ~~Chosen plugin initialization interferes with automatic loading of breed names into select form~~
+  * ~~Temporarily disabling Chosen corrects this issue, but strips away the dropdown menu styling (yuck...)~~
+  * ~~For current demo purposes, if the dropdown menu is empty refreshing the page should fill up the form with breed names~~
 * Search results for some breeds are large (>300)
   * With results greater than 300, preloader plugins seem to cause page jumpiness
   * Tried: _jQuery Lazy_, _Lazy Load_, _Lozad_
