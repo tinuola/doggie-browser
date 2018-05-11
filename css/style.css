@@ -229,7 +229,7 @@ Display
   .image-card {
     flex: 1 0 50%;
   }
-  #display-breed-name {
+  #display-breed-info {
     flex-direction: column;
     justify-content: center;
   }
