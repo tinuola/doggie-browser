@@ -133,6 +133,7 @@ input.select2-search__field {
 /* Select2 styling - Dropdown border */
 span.select2-dropdown.select2-dropdown--below {
   border-color: rgb(0, 167, 207);
+  border-radius: 3px;
 }
 
 /* Select2 styling - Results option highlighting */
@@ -150,13 +151,15 @@ span.select2-dropdown.select2-dropdown--below {
 Display
 **********************/
 
-#display-breed-name {
+#display-breed-info {
   display: flex;
   justify-content: space-between;
   align-items: center;
   height: 50px;
-  padding: 40px 33px;
-  margin-bottom: 22px;
+  background-color: #fff;
+  border-radius: 4px;
+  padding: 55px 33px;
+  margin-bottom: 5px
 }
 
 #breed-name {
@@ -178,6 +181,7 @@ Display
   justify-content: space-around;
   align-items: center;
   padding: 25px;
+  border-radius: 4px;
   background-color: #fff;
 }
 
