@@ -136,6 +136,12 @@ span.select2-dropdown.select2-dropdown--below {
   border-radius: 3px;
 }
 
+/* Select2 styling - Group highlighting */
+.select2-container--default .select2-results__group {
+  color: rgb(207, 199, 199);
+  font-style: italic;
+}
+
 /* Select2 styling - Results option highlighting */
 .select2-container--default .select2-results__option--highlighted[aria-selected] {
   background-color: rgb(0, 167, 207);
