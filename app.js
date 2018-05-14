@@ -1,4 +1,4 @@
-import {breedResults} from './js/dogs.js';
+import { breedResults, subBreedResults } from './js/dogs.js';
 
 $(document).ready(() => {
 
@@ -26,8 +26,14 @@ $(document).ready(() => {
   const displayBreedName = () => {
     let selectedBreed = $( "#select-breed option:selected" ).text();
     $('#breed-name').text(selectedBreed);
-    let breedNameFetch = selectedBreed.toLowerCase();
-    breedResults(breedNameFetch);
+    let breedNameFetch = $( "#select-breed option:selected" ).attr('value');
+    let breedGroupNameFetch = $( "#select-breed option:selected" ).attr('data-breed');
+
+    if(breedGroupNameFetch){
+      return subBreedResults(breedGroupNameFetch, breedNameFetch);
+    }
+
+    return breedResults(breedNameFetch);
   };
 
   $('#select-breed').on('change', displayBreedName);
