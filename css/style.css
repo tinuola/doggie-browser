@@ -187,7 +187,7 @@ Display
 
 .image-card {
   display: flex;
-  flex: 1 0 30%;
+  flex: 0 0 32%;
   height: 300px;
   background-color: #fff;
   border: 1px solid #c9c9c9;
@@ -215,10 +215,13 @@ Display
   }
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 855px) {
   .image-card {
     flex: 0 0 48%;
   }
+}
+
+@media only screen and (max-width: 768px) {
   #breed-name {
     font-size: 30px;
     line-height: 31px;
