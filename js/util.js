@@ -1,4 +1,4 @@
-let select = document.getElementById('select-breed');
+let selectTag = document.getElementById('select-breed');
 let display = document.getElementById('display-results');
 let resultNum = document.getElementById('result-num');
 let errMsg = document.getElementById('breed-name'); 
@@ -18,13 +18,28 @@ const capitalize = (text) => {
   return text.replace(text[0], capChar);
 }
 
-export const displayBreedList = (arr) => {
-  return arr.map(name => {
-    let option = createNode('option');
-    let text = document.createTextNode(capitalize(name));
-    option.appendChild(text);
-    append(select, option);
-  })
+export const createMenuBreed = (name) => {
+  let optionTag = createNode('option');
+  optionTag.setAttribute('value', name);
+  let text = document.createTextNode(capitalize(name));
+  optionTag.appendChild(text);
+  append(selectTag, optionTag);
+}
+
+export const createMenuBreedGroup = (name, arr) => {
+  let optGroupTag = createNode('optgroup');
+  optGroupTag.setAttribute('value', name);
+  optGroupTag.setAttribute('label', capitalize(name));
+  append(selectTag, optGroupTag);
+  
+  return arr.map((ele) => {
+    let optionTag = createNode('option');
+    optionTag.setAttribute('value', ele);
+    optionTag.setAttribute('data-breed', name);
+    let text = document.createTextNode(capitalize(ele) + " " + capitalize(name));
+    optionTag.appendChild(text);
+    append(optGroupTag, optionTag);
+  });
 };
 
 const createImageCardAttributes = (elem) => {
@@ -48,5 +63,6 @@ export const createImageCard = (arr) => {
 };
 
 export const errorHandler = () => {
+  resultNum.textContent = 0;
   return errMsg.textContent = 'Woof! Something went wrong. Try again. Woof!';
 }
