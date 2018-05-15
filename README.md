@@ -22,26 +22,8 @@ A sample web app for browsing dog breeds, using [Dog.CEO's](https://dog.ceo/) Do
 * Dropdown menu 
   * Scroll to browse breed list
   * Type breed name using autocomplete
+  * Filter breeds
 * Displays images and search result count
 * Changing selected breed displays a new set of results
 * Scroll to top function
 * Mobile and tablet responsive 
-
-### Issues
-* ~~Chosen plugin initialization interferes with automatic loading of breed names into select form~~
-  * ~~Temporarily disabling Chosen corrects this issue, but strips away the dropdown menu styling (yuck...)~~
-  * ~~For current demo purposes, if the dropdown menu is empty refreshing the page should fill up the form with breed names~~
-* Search results for some breeds are large (>300)
-  * With results greater than 300, preloader plugins seem to cause page jumpiness
-  * Tried: _jQuery Lazy_, _Lazy Load_, _Lozad_
-  * Current workaround: Only display the first 300 images 
-  * Adding to Icebox: Implement a more efficient results handling system: <br> 
-    _Display n number of images on initial load, then on-scroll/on-click load more images_
-
-### Icebox
-* Filter results by sub-breed
-* ~~Load 'more images' on scroll~~
-* Display more images in a row
-* Click to copy image url
-  * Image 'cart'?
-* Port project to React
