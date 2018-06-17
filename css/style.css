@@ -46,6 +46,7 @@ ol li {
 /*********************
 Header
 **********************/
+
 #header {
   background-color: #38424c;
 }
@@ -71,7 +72,7 @@ Header
 }
 
 @media only screen and (max-width: 696px) {
-  .headline  {
+  .headline {
     font-size: 55px;
     line-height: 45px;
   }
@@ -81,7 +82,7 @@ Header
 }
 
 @media only screen and (max-width: 493px) {
-  .headline  {
+  .headline {
     font-size: 50px;
     line-height: 40px;
   }
@@ -99,55 +100,64 @@ Search
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 225px;  
+  height: 225px;
 }
 
 /* Select2 styling - Removing focus outline */
+
 span.select2-selection.select2-selection--single,
 input.select2-search__field {
   outline: none;
 }
 
 /* Select2 styling - Menu height */
+
 .select2-container--default .select2-selection--single {
   height: 50px;
 }
 
 /* Select2 styling - Adjusting placeholder text position */
+
 .select2-container .select2-selection--single .select2-selection__rendered {
   padding-top: 10px;
 }
 
 /* Select2 styling - Adjusting menu arrow position */
+
 .select2-container--default .select2-selection--single .select2-selection__arrow {
   top: 10px;
 }
 
 /* Select2 styling - Adjust dropdown container height */
-.select2-container--default .select2-results > .select2-results__options {
+
+.select2-container--default .select2-results>.select2-results__options {
   max-height: 250px;
   min-height: 200px;
   overflow-y: auto;
 }
 
 /* Select2 styling - Dropdown border */
+
 span.select2-dropdown.select2-dropdown--below {
   border-color: rgb(0, 167, 207);
   border-radius: 3px;
 }
 
 /* Select2 styling - Group highlighting */
+
 .select2-container--default .select2-results__group {
   color: rgb(207, 199, 199);
   font-style: italic;
 }
 
 /* Select2 styling - Results option highlighting */
+
 .select2-container--default .select2-results__option--highlighted[aria-selected] {
   background-color: rgb(0, 167, 207);
 }
 
 /* Select2 styling - Input field */
+
 .select2-search--dropdown .select2-search__field {
   padding: 8px;
   font-size: 16px;
@@ -201,9 +211,9 @@ Display
   overflow: hidden;
   margin: 5px;
   padding: 17px 0;
-  box-shadow: 7px 8px 11px -6px  #adabab;
-  -moz-box-shadow: 7px 8px 11px -6px  #adabab;
-  -webkit-box-shadow: 7px 8px 11px -6px  #adabab;
+  box-shadow: 7px 8px 11px -6px #adabab;
+  -moz-box-shadow: 7px 8px 11px -6px #adabab;
+  -webkit-box-shadow: 7px 8px 11px -6px #adabab;
 }
 
 .image-card img {
@@ -267,4 +277,8 @@ footer {
 #footer-container p {
   font-size: 12px;
   font-weight: 100;
+}
+
+#footer-container a {
+  color: rgb(0, 167, 207);
 }
