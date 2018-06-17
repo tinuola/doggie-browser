@@ -1,16 +1,19 @@
-import { breedResults, subBreedResults } from './js/dogs.js';
+import {
+  breedResults,
+  subBreedResults
+} from './js/dogs.js';
 
 $(document).ready(() => {
 
   //Select2 instantiation
   $('#select-breed').select2({
     width: '350px',
-    placeholder: 'Select a Dog Breed...'
+    placeholder: 'Select or Search for a Dog Breed...'
   });
 
   //Scroll to top of page
-  $(window).scroll(function() {
-    if ($(this).scrollTop() >= 300) { 
+  $(window).scroll(function () {
+    if ($(this).scrollTop() >= 300) {
       $('#back-to-top').fadeIn(200);
     } else {
       $('#back-to-top').fadeOut(200);
@@ -19,17 +22,17 @@ $(document).ready(() => {
 
   $('#back-to-top').click(() => {
     $('body,html').animate({
-      scrollTop : 0 
+      scrollTop: 0
     }, 500);
   });
 
   const displayBreedName = () => {
-    let selectedBreed = $( "#select-breed option:selected" ).text();
+    let selectedBreed = $("#select-breed option:selected").text();
     $('#breed-name').text(selectedBreed);
-    let breedNameFetch = $( "#select-breed option:selected" ).attr('value');
-    let breedGroupNameFetch = $( "#select-breed option:selected" ).attr('data-breed');
+    let breedNameFetch = $("#select-breed option:selected").attr('value');
+    let breedGroupNameFetch = $("#select-breed option:selected").attr('data-breed');
 
-    if(breedGroupNameFetch){
+    if (breedGroupNameFetch) {
       return subBreedResults(breedGroupNameFetch, breedNameFetch);
     }
 
