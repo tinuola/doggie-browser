@@ -1,6 +1,6 @@
 # Doggie Browser
 
-A sample web app for browsing dog breeds, using [Dog.CEO's](https://dog.ceo/) Dog API.
+A web application for browsing dog images by breed, using [Dog.CEO's](https://dog.ceo/) Dog API.
 
 ## Live Demo
 
