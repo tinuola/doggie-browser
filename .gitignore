@@ -1,2 +1,11 @@
+# Ignoring files in Git:
+# https://help.github.com/articles/ignoring-files/ 
+
+# MAC
 .DS_Store
+.vscode
+.Trashes
+.anima
+Thumbs.db
+
 /node_modules
